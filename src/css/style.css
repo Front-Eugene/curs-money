@@ -523,8 +523,16 @@ form input {
         padding: 20px 0 20px 20px;
     }
 
+    .for li {
+        width: 95%;
+    }
+
     .for span {
         font-size: 30px;
+    }
+
+    .for-title {
+        font-size: 20px;
     }
 
     .for-wrap {
