@@ -16,6 +16,10 @@
     color: #000 !important;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
 body {
     width: 100dvw;
     max-width: 1440px;
@@ -76,7 +80,7 @@ li {
     border-right: 100vw solid transparent;
     /* border-top: 150px solid #c76d03; */
     border-top: 150px solid #c76d03a6;
-    
+
     z-index: 20;
 }
 
@@ -329,6 +333,207 @@ ul li span {
     font-size: 25px;
 }
 
+.modules {
+    padding: 50px;
+    text-align: center;
+}
+
+.modules h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #fdbf01;
+}
+
+.modules-wrap {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modules-item {
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 50px;
+    background: #c76d03a6;
+}
+
+.modules-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modules-head h2 {
+    font-size: 25px;
+    width: 80%;
+}
+
+.item-descr {
+    height: 0;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.modules-btn {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modules-btn span {
+    position: absolute; 
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transition: .8s;
+}
+
+.line-2 {
+    transform: rotate(90deg);
+}
+
+/* Анимация кнопки при активации */
+.modules-item.active .line-1 {
+    transform: rotate(45deg);
+}
+
+.modules-item.active .line-2 {
+    transform: rotate(-45deg);
+}
+
+.modules-item.active .item-descr {
+    height: auto;
+}
+/* Анимация кнопки при активации */
+
+.tarif {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.tarif h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #fdbf01;
+}
+
+.tarif-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.tarif-item {
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    background: #c76d03a6;
+}
+
+.tarif-item h4 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tarif-item button {
+    width: 100%;
+}
+
+.tarif-item h2 {
+    letter-spacing: 5px;
+}
+
+.price-wrap {
+    margin: 20px 0;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: #000;
+}
+
+.price-new {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.how {
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.how h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #fdbf01;
+}
+
+.how-wrap {
+    display: flex;
+    padding: 50px;
+    padding-bottom: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.how-item {
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    background: #c76d03a6;
+}
+
+.how-item h2 {
+    font-size: 25px;
+}
+
+.how-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.how-item div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.faq {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.question-item {
+    text-align: left;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.question-item h3 {
+    font-size: 25px;
+    color: #fdbf01;
+}
+
+.question-item p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
 .why {
     padding: 50px 0;
     background: #c76d03;
@@ -336,7 +541,6 @@ ul li span {
 }
 
 .lecturer {
-    padding: 100px 0;
     display: flex;
     align-items: center;
 }
@@ -348,7 +552,7 @@ ul li span {
 }
 
 .lecturer-wrap {
-  width: 50%;
+    width: 50%;
 }
 
 .lecturer-wrap h2 {
@@ -401,8 +605,31 @@ form h2 {
 .contact {
     width: 100%;
     margin: 50px 0 0 0;
-    background: #c76d03;
+    padding: 50px;
+    text-align: center;
     background: #c76d03a6;
+}
+
+.contact-wrap {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.contact-wrap a {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-wrap img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
 .contact .section-wrap {
@@ -449,15 +676,17 @@ form input {
 }
 
 .custom-radio input {
-    display: none; /* Скрываем стандартный радиобаттон */
+    display: none;
+    /* Скрываем стандартный радиобаттон */
 }
 
 .ccustom-checked img {
     width: 20px !important;
 }
 
-.custom-radio input:checked + .custom-checked {
-    display: flex; /* Показываем при выборе */
+.custom-radio input:checked+.custom-checked {
+    display: flex;
+    /* Показываем при выборе */
 }
 
 @keyframes move {
@@ -580,6 +809,10 @@ form input {
         margin: 50px 0;
         width: 300px;
         height: 300px;
+    }
+
+    .modules-item {
+        width: 100%;
     }
 
     .why {
