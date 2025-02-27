@@ -689,6 +689,12 @@ form input {
     /* Показываем при выборе */
 }
 
+.how-list {
+    width: 50%; 
+    margin: 50px auto;
+}
+
+
 @keyframes move {
 
     0%,
@@ -707,6 +713,7 @@ form input {
 
     .screen {
         height: auto;
+        overflow: hidden;
     }
 
     .screen-text {
@@ -724,6 +731,10 @@ form input {
 
     .screen-wrap h1 {
         font-size: 20px;
+    }
+
+    .date {
+        width: 100%;
     }
 
     .screen-wrap h2 {
@@ -890,5 +901,70 @@ form input {
     form input {
         font-size: 15px;
         width: 255px;
+    }
+
+    .tarif-item {
+        width: 100%;
+    }
+
+    .tarif-item h2 {
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+
+    .price-wrap {
+        font-size: 16px;
+    }
+
+    .modules-head h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .modules {
+        padding: 20px;
+    }
+
+    .tarif {
+        padding: 20px;
+    }
+
+    .how h2 {
+        font-size: 20px;
+    }
+
+    .how-wrap {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .how {
+        padding: 0 20px;
+    }
+
+    .how-list {
+        width: 100%;
+    }
+
+    .how-list li {
+        margin-bottom: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .lecturer-wrap h2 {
+        font-size: 25px;
+    }
+
+    .lecturer-wrap ul li {
+        flex-wrap: nowrap;
+    }
+
+    .question-item {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .contact {
+        width: auto;
     }
 }
