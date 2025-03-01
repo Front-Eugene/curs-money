@@ -919,7 +919,6 @@
         id="tgsend-js">
         </script>
 
-
     <script>
         document.querySelectorAll('.modules-btn').forEach(button => {
             button.addEventListener('click', function() {
@@ -993,7 +992,7 @@
     </script> -->
 
      <!-- Скрипт виджета GetCourse  -->
-     <!-- <script class="none" id="200bab11a68dd103086a153f64339d2172312929"
+     <!-- <script class="getcourse" id="200bab11a68dd103086a153f64339d2172312929"
      src="https://rbcourses.getcourse.ru/pl/lite/widget/script?id=1377811"></script> -->
 
  <!-- Подключение intlTelInput -->
@@ -1058,7 +1057,7 @@
              formData.append("formParams[phone]", `+${countryCode} ${phone}`);
              formData.append("system[refresh]", "1");
 
-             fetch("https://rbcourses.getcourse.ru/pl/lite/widget/script?id=1377811", {  // <-- Замени URL!
+             fetch("https://rbcourses.getcourse.ru/pl/lite/block-public/process?id=2141385004", {  // <-- Замени URL!
                 method: "POST",
                 body: formData
             })
